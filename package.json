@@ -1,0 +1,52 @@
+{
+  "name": "react-ui-gm",
+  "private": false,
+  "version": "1.0.5",
+  "description": "",
+  "module": "./dist/react-ui-gm.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
+    "coverage": "vitest run --covergae"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify-json/ic": "1.1.4",
+    "@testing-library/react": "^13.4.0",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.12",
+    "esno": "^0.16.3",
+    "happy-dom": "6.0.4",
+    "jsdom": "^20.0.0",
+    "plop": "^3.1.1",
+    "postcss": "^8.4.17",
+    "prettier": "2.7.1",
+    "tailwindcss": "2.2.19",
+    "terser": "5.4.0",
+    "typescript": "*",
+    "vite": "3.0.7",
+    "vitepress": "0.22.4",
+    "vitest": "0.21.1"
+  },
+  "dependencies": {
+    "@algolia/client-search": "^4.9.1",
+    "@heroicons/react": "^2.0.11",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
