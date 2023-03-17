@@ -14,7 +14,8 @@ export const config=({
     }
   },
   build: {
-    minify: 'terser', // boolean | 'terser' | 'esbuild'
+    minify: 'esbuild', // boolean | 'terser' | 'esbuild'
+    esbuild: { loader: { '.js': 'jsx' } },
     sourcemap: true, // 输出单独 source文件
     cssCodeSplit: true,
     lib: {
@@ -36,6 +37,6 @@ export const config=({
       }
     },
     outDir: "./dist"
-  }
+  },
 })
-export default defineConfig(config as UserConfig);
+export default defineConfig(config as unknown as UserConfig);

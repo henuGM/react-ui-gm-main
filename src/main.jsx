@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import SButton from "./Button/button";
-import "./index.css";
+// import "./index.css";
 import '../public/iconfont/iconfont.css'
 import FormDemo from "./FormSystem/index"
-
+import AsyncDemo from "./AsyncComponent/asyncDemo";
+import Index from "./KeepAlive/demo";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div>
+    {/* <div> */}
+      <Index></Index>
+    {/* <AsyncDemo></AsyncDemo>
       <SButton color="blue"  plain>
         蓝色按钮
       </SButton>
@@ -25,6 +28,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <SButton color="yellow"  plain icon="tishi"></SButton>
       <SButton color="red" round plain icon="tianjia2"></SButton>
     </div>
-    <FormDemo></FormDemo>
+    <FormDemo></FormDemo> */}
   </React.StrictMode>
 );
